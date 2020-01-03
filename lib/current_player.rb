@@ -8,10 +8,10 @@ def turn_count(board1)
   counter 
 end 
 
-def current_player(board1)
-    if turn_count(board1) == 0 || turn_count(board1) == 3
+def current_player(board)
+    if turn_count(board) == 0 || turn_count(board) == 3
       return "X"
-    elsif turn_count(board1) == 2
+    elsif turn_count(board) == 2
       return "O"
   end 
 end
