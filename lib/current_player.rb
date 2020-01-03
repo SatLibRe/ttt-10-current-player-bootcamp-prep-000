@@ -1,5 +1,5 @@
 def turn_count(board1)
-  counter = 1 
+  counter = 0 
     board1.each do |index| 
       if index == "X" || index == "O"
           counter += 1
@@ -9,9 +9,9 @@ def turn_count(board1)
 end 
 
 def current_player(board)
-    if turn_count(board) == 1 || turn_count(board) == 3
+    if turn_count(board) == 2 || turn_count(board) == 4
       return "X"
-    elsif turn_count(board) == 2
+    elsif turn_count(board) == 3
       return "O"
   end 
 end
